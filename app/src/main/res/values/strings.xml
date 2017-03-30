@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HungrySF</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Fragment titles  -->
+    <string name="american_fragment_title">American</string>
+    <string name="asian_fragment_title">Asian</string>
+    <string name="middle_eastern_fragment_title">Middle Eastern</string>
+    <string name="latin_fragment_title">Latin</string>
+
+    <!-- American Restaurants -->
+    <string name="american_rest_one_name">BullsHead Restaurant</string>
+    <string name="american_rest_one_location">840 Ulloa St\nSan Francisco, CA 94127 </string>
+    <!-- Asian Restaurants -->
+
+    <!-- Latin Restaurants -->
+
+    <!-- Middle Eastern Restaurants -->
+
+</resources>
