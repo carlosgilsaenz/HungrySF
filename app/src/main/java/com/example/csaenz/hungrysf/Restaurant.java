@@ -5,7 +5,6 @@ package com.example.csaenz.hungrysf;
  */
 
 public class Restaurant {
-
     private static final int NO_IMAGE = -1;
 
     private String mRestaurantName;
@@ -15,22 +14,22 @@ public class Restaurant {
     private int mImageResourceID = NO_IMAGE;
 
     /**
-     *  All Constructors
-     *  First takes no Image
+     * All Constructors
+     * First takes no Image
      */
-    Restaurant(String restaurant, String location){
+    Restaurant(String restaurant, String location) {
         mRestaurantName = restaurant;
         mRestaurantLocation = location;
     }
 
-    Restaurant(String restaurant, String location, int drawable){
+    Restaurant(String restaurant, String location, int drawable) {
         mRestaurantName = restaurant;
         mRestaurantLocation = location;
         mImageResourceID = drawable;
     }
 
     /**
-     *  All Setters for each variable
+     * All Setters for each variable
      */
     public void setRestaurantName(String mRestaurantName) {
         this.mRestaurantName = mRestaurantName;
@@ -45,7 +44,7 @@ public class Restaurant {
     }
 
     /**
-     *  All Getters for each variable, but static values
+     * All Getters for each variable, but static values
      */
     public String getRestaurantName() {
         return mRestaurantName;
@@ -60,9 +59,9 @@ public class Restaurant {
     }
 
     /**
-     *  Ensures Image is valid
+     * Ensures Image is valid
      */
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceID != NO_IMAGE;
     }
 }

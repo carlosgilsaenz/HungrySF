@@ -17,14 +17,14 @@ import butterknife.ButterKnife;
  * Created by csaenz on 3/29/2017.
  */
 
-public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder>{
+public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder> {
 
-    // Store a member variable for the contacts
+    // Store Array of restaurants
     private ArrayList<Restaurant> mRestaurantsList;
     // Store the context for easy access
     private Context mContext;
 
-    // Pass in the contact array into the constructor
+    // Pass in the array into the constructor
     public RecycleViewAdapter(Context context, ArrayList<Restaurant> restaurantsList) {
         mRestaurantsList = restaurantsList;
         mContext = context;
@@ -32,8 +32,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
+        LayoutInflater inflater = LayoutInflater.from(mContext);
 
         // Inflate custom Layout
         View restaurantView = inflater.inflate(R.layout.list_item, parent, false);
@@ -48,17 +47,18 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         // Get correct Restaurant from ArrayList
         Restaurant restaurant = mRestaurantsList.get(position);
 
-        // Set item views based on your views and data model
+        // Set views based on data within restaurant object
         TextView name = holder.mRestaurantName;
         name.setText(restaurant.getRestaurantName());
         TextView location = holder.mRestaurantLocation;
         location.setText(restaurant.getRestaurantLocation());
         ImageView image = holder.mRestaurantImage;
 
-        if (restaurant.hasImage()){
+        // Verify image is supplied
+        if (restaurant.hasImage()) {
             image.setImageResource(restaurant.getImageResourceID());
             image.setVisibility(View.VISIBLE);
-        } else{
+        } else {
             image.setVisibility(View.GONE);
         }
     }
@@ -68,7 +68,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         return mRestaurantsList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    // Custom View Holder
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         @BindView(R.id.restaurantName)
         TextView mRestaurantName;
@@ -81,7 +82,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             // Stores the itemView in a public final member variable that can be used
             // to access the context from any ViewHolder instance.
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 }

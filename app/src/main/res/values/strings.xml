@@ -12,10 +12,41 @@
     <!-- American Restaurants -->
     <string name="american_rest_one_name">BullsHead Restaurant</string>
     <string name="american_rest_one_location">840 Ulloa St\nSan Francisco, CA 94127 </string>
+    <string name="american_rest_two_name">Tommy’s Joynt</string>
+    <string name="american_rest_two_location">1101 Geary Blvd\nSan Francisco, CA 94109 </string>
+    <string name="american_rest_three_name">Mac Daddy</string>
+    <string name="american_rest_three_location">1453 18th St\nSan Francisco, CA 94107</string>
+    <string name="american_rest_four_name">Hops &amp; Homin</string>
+    <string name="american_rest_four_location">1453 18th St\nSan Francisco, CA 94107</string>
+
     <!-- Asian Restaurants -->
+    <string name="asian_rest_one_name">Tín Vietnamese Cuisine</string>
+    <string name="asian_rest_one_location">937 Howard St\nSan Francisco, CA 94103</string>
+    <string name="asian_rest_two_name">Yummy Yummy</string>
+    <string name="asian_rest_two_location">1015 Irving St\nSan Francisco, CA 94122</string>
+    <string name="asian_rest_three_name">Tselogs</string>
+    <string name="asian_rest_three_location">552 Jones St\nSan Francisco, CA 94102</string>
+    <string name="asian_rest_four_name">Kiki Japanese Restaurant</string>
+    <string name="asian_rest_four_location">1269 9th Ave\nSan Francisco, CA 94122</string>
 
     <!-- Latin Restaurants -->
+    <string name="latin_rest_one_name">Cha Cha Cha</string>
+    <string name="latin_rest_one_location">91801 Haight St\nSan Francisco, CA 94117</string>
+    <string name="latin_rest_two_name">El Techo</string>
+    <string name="latin_rest_two_location">2518 Mission St\nSan Francisco, CA 94110</string>
+    <string name="latin_rest_three_name">El Farolito</string>
+    <string name="latin_rest_three_location">4817 Mission St\nSan Francisco, CA 94112</string>
+    <string name="latin_rest_four_name">Los Compadres Taco Truck</string>
+    <string name="latin_rest_four_location">SoMa\nSan Francisco, CA 94105</string>
 
     <!-- Middle Eastern Restaurants -->
+    <string name="m_eastern_rest_one_name">Oasis Grill</string>
+    <string name="m_eastern_rest_one_location">91 Drumm St\nSan Francisco, CA 94111</string>
+    <string name="m_eastern_rest_two_name">The Halal Guys</string>
+    <string name="m_eastern_rest_two_location">340 O\'Farrell St\nSan Francisco, CA 94102</string>
+    <string name="m_eastern_rest_three_name">Reem’s</string>
+    <string name="m_eastern_rest_three_location">Mission\nSan Francisco, CA 94110</string>
+    <string name="m_eastern_rest_four_name">Old Jerusalem Restaurant</string>
+    <string name="m_eastern_rest_four_location">2976 Mission St\nSan Francisco, CA 94110</string>
 
 </resources>

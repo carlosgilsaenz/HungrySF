@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         // primary sections of the activity.
         FragmentAdapter fragmentAdapter = new FragmentAdapter(this, getSupportFragmentManager());
 
-        // Set up the ViewPager with the sections adapter.
+        // Set up the ViewPager with adapter.
         mViewPager.setAdapter(fragmentAdapter);
 
         // Set up tabs with ViewPager

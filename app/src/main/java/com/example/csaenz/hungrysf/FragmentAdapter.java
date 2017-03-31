@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+ * A {@link FragmentAdapter} that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
 public class FragmentAdapter extends FragmentPagerAdapter {
@@ -25,7 +25,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
-        switch (position){
+        switch (position) {
             case 0:
                 return new AmericanFragment();
             case 1:
@@ -39,7 +39,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 3 total pages.
+        // Show 4 total pages.
         return 4;
     }
 
