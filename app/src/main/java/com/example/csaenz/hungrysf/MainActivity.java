@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.viewPager)
     ViewPager mViewPager;
 
-    @BindView(R.id.toolbar)
-    Toolbar mToolbar;
-
     @BindView(R.id.tabs)
     TabLayout mTabsLayout;
 
@@ -31,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Bind Views to ensure not Null
         ButterKnife.bind(this);
-
-        // Setup Toolbar for Title of App
-        setSupportActionBar(mToolbar);
 
         // Create the adapter that will return a fragment for each of the four
         // primary sections of the activity.

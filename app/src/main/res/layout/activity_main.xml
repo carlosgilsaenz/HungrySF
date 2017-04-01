@@ -9,16 +9,10 @@ tools:context="com.example.csaenz.hungrysf.MainActivity">
         android:id="@+id/appbar"
         style="@style/AppBarLayout">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            style="@style/Toolbar"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-        </android.support.v7.widget.Toolbar>
-
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
+            app:tabTextColor="@color/tabLayoutText"
+            app:tabSelectedTextColor="@android:color/white"
             style="@style/Basic_two" />
 
     </android.support.design.widget.AppBarLayout>
